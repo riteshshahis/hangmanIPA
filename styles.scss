@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hangman{
+    border: 4px blue solid;
+    height: 650px;
+    width: 70%;
+    display: grid;
+    gap: 10px;
+
+    
+&__bubble{
+    grid-area: bubble;
+    background-image: url(./cloud.JPG);
+    background-size: 300px;
+    width: 120%;
+    height: 150%;
+    opacity: .50;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    // margin: auto;
+}
+
+&__picture{
+    grid-area: picture;
+    margin-top: 20px;
+    background-image: url(./hangmanbefore.png);
+    background-size: 300px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+&__phrase{
+    grid-area: phrase;
+    height: 100%;
+    width: 90%;
+    border: 3px solid blue;
+    margin-top: 40px;
+    border-radius: 30%;
+    margin-left: auto; // centres block when used with right
+    margin-right: auto; // centres block when used with left
+    // margin: auto;
+}
+
+&__alreadyUsed{
+    grid-area: alreadyUsed;
+    height: 50%;
+    width: 70%;
+    border-radius: 30%;
+    border: 8px solid red;
+    margin-top: 40px;
+    margin-left: auto; // centres block when used with right
+    margin-right: auto; // centres block when used with left
+
+}
+&__button{
+    grid-area: button;
+    height: 60%;
+    width: 70%;
+    border-radius: 30%;
+    border: 4px solid blue;
+    // margin-top: 40px;
+    margin-left: auto; // centres block when used with right
+    margin-right: auto; // centres block when used with left
+    text-align: center;
+    color: blue;
+
+}
+
+&__reset{
+    grid-area: reset;
+    height: 60%;
+    width: 70%;
+    border-radius: 30%;
+    border: 4px solid blueviolet;
+    // margin-top: 40px;
+    margin-left: auto; // centres block when used with right
+    margin-right: auto; // centres block when used with left
+
+}
+
+&__play{
+    grid-area: reset;
+    height: 50%;
+    width: 70%;
+    border-radius: 30%;
+    border: 4px solid blue;
+    margin-top: 40px;
+    margin-left: auto; // centres block when used with right
+    margin-right: auto; // centres block when used with left
+
+}
+            
+grid-template-areas: 
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    "bubble bubble bubble bubble picture"
+    ". . . . ."
+    "phrase phrase phrase phrase phrase"
+    ". . . . alreadyUsed"
+    "reset reset . . button"
+    ". . . . ."
+
+}
