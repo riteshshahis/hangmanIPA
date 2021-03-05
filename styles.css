@@ -14,7 +14,7 @@
 }
 .hangman__bubble {
   grid-area: bubble;
-  background-image: url(./cloud.JPG);
+  background-image: url(./styles/cloud.JPG);
   background-size: 300px;
   width: 120%;
   height: 150%;
@@ -26,7 +26,7 @@
 .hangman__picture {
   grid-area: picture;
   margin-top: 20px;
-  background-image: url(./hangmanbefore.png);
+  background-image: url(./styles/hangmanbefore.png);
   background-size: 300px;
   width: 100%;
   height: 100%;
