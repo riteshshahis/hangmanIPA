@@ -100,6 +100,10 @@ const badGuessStatus = badGuess = (tried, screenButton) => {
         case 8:
             document.querySelector('.hangman__picture').style.backgroundImage = "url('./styles/hangman-final.png')";
             document.querySelector('.hangman__bubble').style.opacity="1";
+            // const buttonParent=document.querySelector(".hangman__button")
+            document.querySelector(".txt").style.visibility = "hidden";
+            // buttonParent.removeChild(buttonInput);
+    
             break;
         default:
             document.querySelector('.hangman__picture').style.backgroundImage = "url('./styles/hangmanbefore.png')";
